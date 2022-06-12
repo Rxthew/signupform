@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Rxthew/signupform/issues"
   },
-  "homepage": "https://github.com/Rxthew/signupform#readme"
+  "homepage": "https://github.com/Rxthew/signupform#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2"
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +7,46 @@
     <link href="./output.css" rel="stylesheet">
     <title>signupform</title>
 </head>
-<body>
-    <header></header>
-    <div></div>
-    <div>
-        <form action="">
-            <label for="name_input">Name</label>
-            <input name="name_input" id="name_input" type="text" required="required">
-            <label for="email_input">Email</label>
-            <input name="email_input" id="email_input" type="email" required="required">
-            <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone" required="required">
-            <label for="pword_input">Password</label>
-            <input name="pword_input" id="pword_input" type="password" required="required">
-            <label for="confirm">Confirm Password</label>
-            <input type="password" name="confirm" id="confirm" required="required">
-        </form>
-        
-
+<body class="h-full">
+    <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-16 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <form action="#" class="mt-8 space-y-6">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div class="flex">
+                        <div class="px-3 py-3">
+                            <label for="name_input" class="font-mono uppercase text-sm text-gray-500">First Name</label>
+                            <input name="name_input" id="name_input" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" required="required">
+                        </div>
+                        <div class="px-3 py-3">
+                            <label for="lastn_input" class="font-mono uppercase text-sm text-gray-500">Last Name</label>
+                            <input name="lastn_input" id="lastn_input" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 text-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" required="required">        
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="px-3 py-3">
+                            <label for="email_input" class="font-mono uppercase text-gray-500 text-sm">Email</label>
+                            <input name="email_input" id="email_input" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="email" required="required">
+                        </div>
+                        <div class="px-3 py-3">
+                            <label for="phone" class="font-mono uppercase text-sm text-gray-500">Phone</label>
+                            <input type="text" name="phone" id="phone" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" required="required">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="px-3 py-3">
+                            <label for="pword_input" class="font-mono uppercase text-sm text-gray-500">Password</label>
+                            <input name="pword_input" id="pword_input" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="password" required="required">
+                        </div>
+                        <div class="px-3 py-3">
+                            <label for="confirm" class="font-mono uppercase text-sm text-gray-500">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm" class="appearance-none rounded-none relative block w-full px-1 py-1 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" required="required">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         
     </div>
+    
 </body>
 </html>
