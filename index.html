@@ -9,52 +9,55 @@
 </head>
 <body class="h-full">
     <div class="min-h-full flex flex-wrap lg:flex-nowrap"> 
-        <div id="imgcontainer" class="relative flex max-w-screen max-h-screen">
-            <div class="flex absolute top-1/2">
-                
-            </div>
+        <div id="imgcontainer" class="relative flex max-w-screen max-h-screen font-norse">
+            <a href='https://github.com/rxthew' class="min-w-full flex justify-center items-center absolute top-1/4">
+                <div class="min-w-full min-h-full opacity-25 bg-sky-100 absolute"></div>
+                <span class="text-4xl text-white z-0">Visit my</span>
+                <img src="github-logo.png" alt="github-logo" class="object-cover z-0 p-4">
+                <span class="text-4xl text-white z-0">profile</span>
+            </a>
             <img src="./tong-desert-footsteps.jpg" alt="tong-desert-footsteps" class="object-cover min-w-full max-h-full">
             <span class="absolute bottom-0 text-white tracking-widest">Photo by <a href="https://unsplash.com/@bernicehtong" class="text-green-600 underline">Bernice Tong</a></span>
         </div>
         <div id=formcontainer class="flex flex-col">
-            <div class="flex flex-col mb-4 md:text-2xl font-semibold tracking-wide">
-                <p>This is an authentic mock-up of an online service. You have just 
-                    realised you absolutely <em>need</em> this from now on.
+            <div class="flex flex-col mb-4 p-8 text-justify md:text-2xl text-amber-800 tracking-wide">
+                <p>This is an authentic mock-up of an online service and you have just 
+                realised you absolutely <em>need</em> this from now on.
                 </p>
                 <p class="pt-8">Can you still sign up? Or is there just not enough room? 
                 </p>
                 <p class="pt-8">Find out by filling the form below!</p>
             </div>
             <form action="#" class="m0 p0 min-w-[50vw] max-h-fit">
-                <div class="flex flex-col items-center space-y-8 shadow-lg bg-white p-8 rounded-md">
+                <div class="flex flex-col items-center space-y-8 shadow-lg shadow-sky-900 bg-amber-600 p-8 rounded-md">
                     <div class="flex space-x-16">
                         <div class="px-3 py-3">
-                            <label for="name_input" class="font-mono uppercase text-sm text-gray-500">First Name</label>
-                            <input name="name_input" id="name_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" required="required">
+                            <label for="name_input" class="font-mono uppercase text-sm text-orange-200">First Name</label>
+                            <input name="name_input" id="name_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" required="required">
                         </div>
                         <div class="px-3 py-3">
-                            <label for="lastn_input" class="font-mono uppercase text-sm text-gray-500">Last Name</label>
-                            <input name="lastn_input" id="lastn_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" required="required">        
+                            <label for="lastn_input" class="font-mono uppercase text-sm text-orange-200">Last Name</label>
+                            <input name="lastn_input" id="lastn_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5  border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" required="required">        
                         </div>
                     </div>
                     <div class="flex space-x-16">
                         <div class="px-3 py-3">
-                            <label for="email_input" class="font-mono uppercase text-gray-500 text-sm">Email</label>
-                            <input name="email_input" id="email_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="email" required="required">
+                            <label for="email_input" class="font-mono uppercase text-orange-200 text-sm">Email</label>
+                            <input name="email_input" id="email_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="email" required="required">
                         </div>
                         <div class="px-3 py-3">
-                            <label for="phone" class="font-mono uppercase text-sm text-gray-500">Phone</label>
-                            <input name="phone" id="phone" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="text" pattern="^\+?[0-9]{3}-?[0-9]{6,12}" required="required">
+                            <label for="phone" class="font-mono uppercase text-sm text-orange-200">Phone</label>
+                            <input name="phone" id="phone" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" pattern="^\+?[0-9]{3}-?[0-9]{6,12}" required="required">
                         </div>
                     </div>
                     <div class="flex space-x-16">
                         <div class="px-3 py-3">
-                            <label for="pword_input" class="font-mono uppercase text-sm text-gray-500">Password</label>
-                            <input name="pword_input" id="pword_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" type="password" required="required">
+                            <label for="pword_input" class="font-mono uppercase text-sm text-orange-200">Password</label>
+                            <input name="pword_input" id="pword_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="password" required="required">
                         </div>
                         <div class="px-3 py-3">
-                            <label for="confirm" class="font-mono uppercase text-sm text-gray-500">Confirm Password</label>
-                            <input type="password" name="confirm" id="confirm" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:z-10 sm:text-sm" required="required">
+                            <label for="confirm" class="font-mono uppercase text-sm text-orange-200">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" required="required">
                         </div>
                     </div>
                 </div>
