@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>signupform</title>
+    <script src="pwords.js" defer></script>
 </head>
 <body class="h-full">
     <div class="min-h-full flex flex-wrap lg:flex-nowrap"> 
@@ -19,8 +20,8 @@
             <img src="./tong-desert-footsteps.jpg" alt="tong-desert-footsteps" class="object-cover min-w-full max-h-full">
             <span class="absolute bottom-0 text-white tracking-widest">Photo by <a href="https://unsplash.com/@bernicehtong" class="text-green-600 underline">Bernice Tong</a></span>
         </div>
-        <div id=formcontainer class="flex flex-col">
-            <div class="flex flex-col mb-4 p-8 text-justify md:text-2xl text-amber-800 tracking-wide">
+        <div id=formcontainer class="flex flex-col justify-stretch">
+            <div class="flex flex-col grow md:pl-12 md:pr-3 b-4 justify-end text-justify md:text-2xl text-amber-800 font-semibold">
                 <p>This is an authentic mock-up of an online service and you have just 
                 realised you absolutely <em>need</em> this from now on.
                 </p>
@@ -28,43 +29,47 @@
                 </p>
                 <p class="pt-8">Find out by filling the form below!</p>
             </div>
-            <form action="#" class="m0 p0 min-w-[50vw] max-h-fit">
-                <div class="flex flex-col items-center space-y-8 shadow-lg shadow-sky-900 bg-amber-600 p-8 rounded-md">
-                    <div class="flex space-x-16">
+            <form action="#" class="flex flex-col grow m0 p0 min-w-[50vw] max-h-fit bg-white">
+                <div class="flex flex-col grow md:space-y-8 shadow-lg shadow-sky-900 bg-amber-600 p-8 rounded-md">
+                    <div class="flex flex-col md:flex-row md:space-x-16">
                         <div class="px-3 py-3">
                             <label for="name_input" class="font-mono uppercase text-sm text-orange-200">First Name</label>
-                            <input name="name_input" id="name_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" required="required">
+                            <input name="name_input" id="name_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 placeholder:italic placeholder:text-gray-500 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="text" placeholder="Jane" onfocus="this.placeholder = ''" autocomplete="off" required="required">
                         </div>
                         <div class="px-3 py-3">
                             <label for="lastn_input" class="font-mono uppercase text-sm text-orange-200">Last Name</label>
-                            <input name="lastn_input" id="lastn_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5  border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" required="required">        
+                            <input name="lastn_input" id="lastn_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5  border border-orange-300 placeholder:italic placeholder:text-gray-500 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="text" placeholder="Doe" onfocus="this.placeholder = ''" autocomplete="off" required="required">        
                         </div>
                     </div>
-                    <div class="flex space-x-16">
+                    <div class="flex flex-col md:flex-row md:space-x-16">
                         <div class="px-3 py-3">
                             <label for="email_input" class="font-mono uppercase text-orange-200 text-sm">Email</label>
-                            <input name="email_input" id="email_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="email" required="required">
+                            <input name="email_input" id="email_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 placeholder:italic placeholder:text-gray-500 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="email" placeholder="janedoe@doemail.com" onfocus="this.placeholder = ''" autocomplete="off" required="required">
                         </div>
                         <div class="px-3 py-3">
                             <label for="phone" class="font-mono uppercase text-sm text-orange-200">Phone</label>
-                            <input name="phone" id="phone" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="text" pattern="^\+?[0-9]{3}-?[0-9]{6,12}" required="required">
+                            <input name="phone" id="phone" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 placeholder:italic placeholder:text-gray-500 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="text" placeholder="+441231231230" onfocus="this.placeholder = ''" pattern="^\+?[0-9]{3}-?[0-9]{6,12}" autocomplete="off" required="required">
                         </div>
                     </div>
-                    <div class="flex space-x-16">
+                    <div class="flex flex-col md:flex-row md:space-x-16">
                         <div class="px-3 py-3">
                             <label for="pword_input" class="font-mono uppercase text-sm text-orange-200">Password</label>
-                            <input name="pword_input" id="pword_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" type="password" required="required">
+                            <input name="pword_input" id="pword_input" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="password" minlength="8" autocomplete="off" required="required">
                         </div>
                         <div class="px-3 py-3">
                             <label for="confirm" class="font-mono uppercase text-sm text-orange-200">Confirm Password</label>
-                            <input type="password" name="confirm" id="confirm" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:z-10 sm:text-sm" required="required">
+                            <input name="confirm" id="confirm" class="appearance-none rounded-none relative block w-full px-0.5 py-0.5 border border-orange-300 focus:outline-none focus:border-lime-600 focus:invalid:bg-red-500 focus:z-10 text-sm md:text-lg" type="password" minlength="8" autocomplete="off" required="required">
                         </div>
                     </div>
                 </div>
+                <footer class="grow p-8 space-y-6 md:text-2xl">
+                    <button type="submit" class="appearance-none text-orange-500 font-semibold bg-black border-solid border-4 border-orange-500 rounded-md py-4 px-3">Create Account</button>
+                    <span class="block">Already have an account? <a href="#" class="text-orange-500 underline font-semibold ">Log in</a></span>
+                </footer>
             </form>
         </div>
         
-    </div>
+    </div> 
     
 </body>
 </html>
